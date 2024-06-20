@@ -1,0 +1,19 @@
+{
+  "name": "@your-org/test",
+  "version": "0.1.0",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "description": "Generated react component (js)",
+  "main": "src/App.jsx",
+  "module": "src/App.jsx",
+  "types": "dist/App.d.ts",
+  "type": "module",
+  "scripts": {
+    "test": "test",
+    "build": "node ../../../scripts/build.mjs",
+    "publish": "node ../../../scripts/publish.mjs"
+  },
+  "author": "Justin Shaw <justin@your-org.com>",
+  "license": "ISC"
+}

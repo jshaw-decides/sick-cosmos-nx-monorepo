@@ -1,0 +1,146 @@
+/* import tailwind directives to use tailwind css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="url"],
+  input[type="number"] {
+    @apply rounded-md border-inputborder;
+  }
+
+  input[type="checkbox"]:focus {
+    @apply !outline-transparent !ring-transparent !ring-offset-0;
+  }
+
+  input[type="checkbox"]:checked {
+    @apply bg-[length:1em];
+  }
+
+  input[type]:focus {
+    @apply border-inputborder ring-0;
+  }
+
+  button:disabled {
+    @apply border-inherit disabled:cursor-not-allowed disabled:border disabled:border-gray-300 disabled:bg-gray-300;
+  }
+}
+
+.btn-outline {
+  @apply border border-primary-100 bg-transparent text-primary-100;
+}
+
+.btn-outline:hover {
+  @apply bg-gray-200;
+}
+
+.btn-secondary {
+  @apply border border-label bg-label text-white;
+}
+
+.btn-secondary:hover {
+  @apply bg-zinc-500;
+}
+
+.btn-indigo {
+  @apply border border-[#3A36DB] bg-[#3A36DB];
+}
+
+.btn-indigo:hover {
+  @apply border border-indigo-900 bg-indigo-900;
+}
+
+.btn-primary {
+  @apply border border-primary-100 bg-primary-100;
+}
+
+.btn-primary:hover {
+  @apply border border-primary-200 bg-primary-200;
+}
+
+.btn-danger {
+  @apply border border-red-600 bg-red-600;
+}
+
+.btn-danger:hover {
+  @apply border border-red-700 bg-red-700;
+}
+
+.btn-success {
+  @apply border border-emerald-400 bg-emerald-400;
+}
+
+.btn-success:hover {
+  @apply border border-emerald-600 bg-emerald-600;
+}
+
+.btn-warn {
+  @apply border border-[#f9b959] bg-[#f9b959];
+}
+
+.btn-warn:hover {
+  @apply border border-yellow-400 bg-yellow-400;
+}
+
+.btn-word {
+  @apply cursor-pointer font-Archivo font-medium text-primary-100 transition-all duration-300 ease-in-out;
+}
+
+.btn-word:hover {
+  @apply text-primary-200;
+}
+
+.btn-word-indigo {
+  @apply cursor-pointer font-Archivo font-medium text-indigo-500 transition-all duration-300 ease-in-out;
+}
+
+.btn-word-indigo:hover {
+  @apply text-indigo-700;
+}
+
+.btn-word-danger {
+  @apply cursor-pointer font-Archivo font-medium text-red-500 transition-all duration-300 ease-in-out;
+}
+
+.btn-word-danger:hover {
+  @apply text-red-700;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d4d4d4;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+.aws-btn {
+  --slider-height-percentage: 60% !important;
+  --slider-transition-duration: 700ms !important;
+  --organic-arrow-thickness: 4px !important;
+  --organic-arrow-border-radius: 20px !important;
+  --organic-arrow-height: 17px !important;
+  --organic-arrow-color: #fff !important;
+  --control-button-width: 28px !important;
+  --control-button-height: 50px !important;
+  --control-button-background: #3d4245bf !important;
+  --loader-bar-color: #0090ff !important;
+  --loader-bar-height: 6px !important;
+  --content-background-color: white !important;
+}

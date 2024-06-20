@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "declaration": true,
+    "allowJs": true,
+    "emitDeclarationOnly": true,
+    "declarationDir": "dist",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "types": ["react", "react-dom", "node"],
+    "strict": false
+  },
+  "include": ["src"],
+  "exclude": ["node_modules/@types/react/index.d.ts", "dist", "fixtures"]
+}
